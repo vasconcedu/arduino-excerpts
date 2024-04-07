@@ -71,10 +71,10 @@ void loop() {
     radioDriver.read(&dataState, sizeof(dataState));
     
     if(dataState == 1) {
-      Serial.println("[RX] data state is 1");
+      Serial.println("[RX] Data state is 1");
       digitalWrite(dataPin, HIGH);
     } else if(dataState == 0) {
-      Serial.println("[RX] data state is 0");
+      Serial.println("[RX] Data state is 0");
       digitalWrite(dataPin, LOW);
     }
   }
